@@ -23,10 +23,10 @@ public class Calculadora extends JFrame {
         setLayout(new BorderLayout());
 
         Display display = new Display();
-        add(display);
+        add(display, BorderLayout.NORTH);
 
         Teclado teclado = new Teclado();
-        add(teclado);
+        add(teclado, BorderLayout.CENTER);
     }
 
     public static void main(String[] args) {
