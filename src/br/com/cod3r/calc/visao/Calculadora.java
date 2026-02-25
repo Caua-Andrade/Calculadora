@@ -1,10 +1,13 @@
 package br.com.cod3r.calc.visao;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class Calculadora extends JFrame {
 
     public Calculadora() {
+
+        organizarLayout();
 
         setSize(232, 322);
         // o dispose fecha a janela atual
@@ -14,6 +17,16 @@ public class Calculadora extends JFrame {
         //abre no centro da tela
         setLocationRelativeTo(null);
         setVisible(true);
+    }
+
+    private void organizarLayout() {
+        setLayout(new BorderLayout());
+
+        Display display = new Display();
+        add(display);
+
+        Teclado teclado = new Teclado();
+        add(teclado);
     }
 
     public static void main(String[] args) {
