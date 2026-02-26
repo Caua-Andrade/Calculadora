@@ -9,12 +9,9 @@ public class Calculadora extends JFrame {
 
         organizarLayout();
 
-        setSize(232, 322);
-        // o dispose fecha a janela atual
-
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-
-        //abre no centro da tela
+        setSize(232, 322);// o dispose fecha a janela atual
+        // setUndecorated(true); // Tira a barra com os botões pra fechar, minimizar ou maximizar
+        setDefaultCloseOperation(EXIT_ON_CLOSE);//abre no centro da tela
         setLocationRelativeTo(null);
         setVisible(true);
     }
