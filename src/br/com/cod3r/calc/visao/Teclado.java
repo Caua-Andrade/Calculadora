@@ -28,27 +28,24 @@ public class Teclado extends JPanel {
         adicionarBotao("9", COR_CINZA_CLARO, c, 2, 1);
         adicionarBotao("*", COR_LARANJA, c, 3, 1);
 
-        c.gridy = 1;
-        c.gridx = 0;
-        add(new Botao("7", COR_CINZA_CLARO), c);
-        add(new Botao("8", COR_CINZA_CLARO), c);
-        add(new Botao("9", COR_CINZA_CLARO), c);
-        add(new Botao("*", COR_LARANJA), c);
+        // Linha 3
+        adicionarBotao("4", COR_CINZA_CLARO, c, 0, 1);
+        adicionarBotao("5", COR_CINZA_CLARO, c, 1, 1);
+        adicionarBotao("6", COR_CINZA_CLARO, c, 2, 1);
+        adicionarBotao("-", COR_LARANJA, c, 3, 1);
 
-        add(new Botao("7", COR_CINZA_CLARO), c);
-        add(new Botao("8", COR_CINZA_CLARO), c);
-        add(new Botao("9", COR_CINZA_CLARO), c);
-        add(new Botao("*", COR_LARANJA), c);
+        // Linha 4
+        adicionarBotao("1", COR_CINZA_CLARO, c, 0, 1);
+        adicionarBotao("2", COR_CINZA_CLARO, c, 1, 1);
+        adicionarBotao("3", COR_CINZA_CLARO, c, 2, 1);
+        adicionarBotao("+", COR_LARANJA, c, 3, 1);
 
-        add(new Botao("7", COR_CINZA_CLARO), c);
-        add(new Botao("8", COR_CINZA_CLARO), c);
-        add(new Botao("9", COR_CINZA_CLARO), c);
-        add(new Botao("*", COR_LARANJA), c);
+        // Linha 5
+        adicionarBotao("0", COR_CINZA_CLARO, c, 0, 1);
+        adicionarBotao("0", COR_CINZA_CLARO, c, 1, 1);
+        adicionarBotao(",", COR_CINZA_CLARO, c, 2, 1);
+        adicionarBotao("=", COR_LARANJA, c, 3, 1);
 
-        add(new Botao("7", COR_CINZA_CLARO), c);
-        add(new Botao("8", COR_CINZA_CLARO), c);
-        add(new Botao("9", COR_CINZA_CLARO), c);
-        add(new Botao("*", COR_LARANJA), c);
     }
 
     private void adicionarBotao(String texto, Color cor, GridBagConstraints c, int x, int y) {
