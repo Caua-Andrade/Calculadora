@@ -54,5 +54,9 @@ public class Teclado extends JPanel {
 
     private void adicionarBotao(String texto, Color cor, GridBagConstraints c, int x, int y) {
 
+        c.gridx = x;
+        c.gridy = y;
+        Botao botao = new Botao(texto, cor);
+        add(botao, c);
     }
 }
