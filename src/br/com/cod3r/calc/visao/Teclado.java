@@ -16,18 +16,11 @@ public class Teclado extends JPanel {
 
         setLayout(layout);
 
+        // Linha 1
         adicionarBotao("AC", COR_CINZA_ESCURO, c, 0, 0);
-
-        c.gridy = 0;
-        c.gridx = 0;
-        add(new Botao("AC", COR_CINZA_ESCURO), c);
-
-        c.gridx = 1;
-        add(new Botao("+/-", COR_CINZA_ESCURO), c);
-        c.gridx = 2;
-        add(new Botao("%", COR_CINZA_ESCURO), c);
-        c.gridx = 3;
-        add(new Botao("/", COR_LARANJA), c);
+        adicionarBotao("+/-", COR_CINZA_ESCURO, c, 1, 0);
+        adicionarBotao("%", COR_CINZA_ESCURO, c, 2, 0);
+        adicionarBotao("/", COR_LARANJA, c, 3, 0);
 
         c.gridy = 1;
         c.gridx = 0;
