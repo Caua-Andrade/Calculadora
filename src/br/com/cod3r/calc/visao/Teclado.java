@@ -11,6 +11,11 @@ public class Teclado extends JPanel {
 
     public Teclado() {
 
+        GridBagLayout layout = new GridBagLayout();
+        GridBagConstraints c = new GridBagConstraints();
+
+        setLayout(layout);
+
         add(new Botao("AC", COR_CINZA_ESCURO));
         add(new Botao("+/-", COR_CINZA_ESCURO));
         add(new Botao("%", COR_CINZA_ESCURO));
