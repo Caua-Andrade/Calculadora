@@ -65,6 +65,9 @@ public class Teclado extends JPanel implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        System.out.println("Executado");
+        if (e.getSource() instanceof JButton) {
+            JButton botao = (JButton) e.getSource();
+            System.out.println(botao.getText());
+        }
     }
 }
