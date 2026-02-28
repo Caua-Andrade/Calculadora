@@ -1,11 +1,12 @@
 package br.com.cod3r.calc.visao;
 
 import br.com.cod3r.calc.modelo.Memoria;
+import br.com.cod3r.calc.modelo.MemoriaObservador;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class Display extends JPanel {
+public class Display extends JPanel implements MemoriaObservador {
 
     private final JLabel label;
 
@@ -18,5 +19,10 @@ public class Display extends JPanel {
         setLayout(new FlowLayout(FlowLayout.RIGHT, 10, 25));
 
         add(label);
+    }
+
+    @Override
+    public void valorAlterado(String novoValor) {
+        label.setText(novoValor);
     }
 }
