@@ -2,6 +2,7 @@ package br.com.cod3r.calc.modelo;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ThreadPoolExecutor;
 
 public class Memoria {
 
@@ -58,6 +59,18 @@ public class Memoria {
             // Quando não foir número...
             if ("AC".equals(texto)) {
                 return TipoComando.ZERAR;
+            } else if ("/".equals(texto)) {
+                return TipoComando.DIV;
+            } else if ("*".equals(texto)) {
+                return TipoComando.MULT;
+            } else if ("+".equals(texto)) {
+                return TipoComando.SOMA;
+            } else if ("-".equals(texto)) {
+                return TipoComando.SUB;
+            } else if ("=".equals(texto)) {
+                return TipoComando.IGUAL;
+            } else if (",".equals(texto)) {
+                return TipoComando.VIRGULA;
             }
         }
 
