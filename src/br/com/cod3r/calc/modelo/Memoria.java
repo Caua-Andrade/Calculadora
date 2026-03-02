@@ -44,6 +44,12 @@ public class Memoria {
     }
 
     private TipoComando detectarTipoComando(String texto) {
+
+        if (textoAtual.isEmpty() && texto == "0")  {
+            return null;
+        }
+
+
         return null;
     }
 }
