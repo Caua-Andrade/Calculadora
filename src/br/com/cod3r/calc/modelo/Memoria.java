@@ -50,6 +50,13 @@ public class Memoria {
         }
 
 
+        try {
+            Integer.parseInt(texto);
+            return TipoComando.NUMERO;
+        } catch (NumberFormatException e) {
+            throw new RuntimeException(e);
+        }
+
         return null;
     }
 }
