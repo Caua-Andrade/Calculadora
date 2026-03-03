@@ -45,6 +45,8 @@ public class Memoria {
             textoBuffer = "";
             substituir = false;
             ultimaOperacao = null;
+        } else if (tipoComando == TipoComando.NUMERO || tipoComando == TipoComando.VIRGULA) {
+            textoAtual = substituir ? texto : textoAtual + texto;
         }
 
         observadores.forEach(o -> o.valorAlterado(getTextoAtual()));
