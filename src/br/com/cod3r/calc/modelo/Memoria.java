@@ -14,7 +14,10 @@ public class Memoria {
 
     private final List<MemoriaObservador> observadores = new ArrayList<>();
 
+    private TipoComando ultimaOperacao = null;
+    private boolean substituir = false;
     private String textoAtual = "";
+    private String textoBuffer = "";
 
     private Memoria() {
     }
