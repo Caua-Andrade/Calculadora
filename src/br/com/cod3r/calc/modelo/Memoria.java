@@ -73,6 +73,8 @@ public class Memoria {
             }
         }
 
+        // O valor interno é o buffer
+
         return null;
     }
 }
