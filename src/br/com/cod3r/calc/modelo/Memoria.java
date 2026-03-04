@@ -80,7 +80,9 @@ public class Memoria {
             resultado = numeroBuffer / numeroAtual;
         }
 
-        return textoAtual;
+        String resultadoString = Double.toString(resultado).replace(".", ",");
+
+        return resultadoString;
     }
 
     private TipoComando detectarTipoComando(String texto) {
