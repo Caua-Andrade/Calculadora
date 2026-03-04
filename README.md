@@ -1,126 +1,106 @@
-# 📟 Calculadora — Projeto em Java
+# 🧮 Calculadora Java com Swing
 
-Este repositório contém uma **calculadora simples desenvolvida em Java**, criada com o objetivo de praticar lógica de programação, manipulação de entrada/saída via terminal e conceitos de programação orientada a objetos (POO). ([GitHub][1])
+Aplicação desktop desenvolvida em **Java**, utilizando **Java Swing** para construção da interface gráfica.  
+Este projeto foi criado com foco no aprofundamento em **Programação Orientada a Objetos (POO)**, organização em camadas e manipulação de eventos no desenvolvimento de aplicações desktop.
 
----
-
-## 🧠 Sobre o Projeto
-
-A Calculadora é um programa de linha de comando que permite ao usuário realizar operações matemáticas básicas entre números. O foco principal é fornecer uma ferramenta de estudo para quem está aprendendo Java e lógica de programação. ([GitHub][1])
+A calculadora realiza operações matemáticas básicas por meio de uma interface intuitiva e responsiva, demonstrando domínio de componentes gráficos, tratamento de eventos e estruturação de código limpa e modular.
 
 ---
 
-## 🚀 Funcionalidades
+## 🚀 Demonstração
 
-* ✅ Soma de dois números
-* ✅ Subtração
-* ✅ Multiplicação
-* ✅ Divisão (com tratamento de divisão por zero)
-* ⚙️ Interface simples no terminal
-* 🔁 Possibilidade de realizar múltiplos cálculos em sequência
+Aplicação desktop com:
 
-> ⚠️ **Nota:** O programa trabalha via linha de comando, recebendo inputs do usuário e exibindo o resultado no console. ([GitHub][1])
+- Display numérico dinâmico
+- Botões interativos
+- Atualização em tempo real das operações
 
 ---
 
-## 🧾 Pré-requisitos
+## 🧠 Conceitos Aplicados
 
-Antes de executar este projeto, você precisa ter instalado em sua máquina:
+Este projeto demonstra:
 
-* 🟩 **Java Development Kit (JDK) 8 ou superior**
-* 📁 Um terminal/linha de comando
-* 🧑‍💻 Familiaridade básica com Java
+- ✔️ Programação Orientada a Objetos (encapsulamento e separação de responsabilidades)
+- ✔️ Organização em pacotes (modelo e visão)
+- ✔️ Manipulação de eventos com `ActionListener`
+- ✔️ Uso de componentes do **Java Swing** (`JFrame`, `JButton`, `JTextField`, etc.)
+- ✔️ Estrutura modular e escalável
+- ✔️ Boas práticas de organização de código
 
 ---
 
-## 📂 Estrutura do Projeto
-
-O projeto está organizado utilizando o padrão de pacotes Java:
+## 🧱 Estrutura do Projeto
 
 ```
+
 src/
-└── br/
-    └── com/
-        └── cod3r/
-            └── calc/
-                ├── (arquivos .java da calculadora)
-                └── …
-.idea/                   # Configurações da IDE
-.gitignore               # Arquivos ignorados pelo Git
-calculadora.iml          # Configuração de projeto da IDE
-```
+└─ br/
+└─ com/
+└─ cod3r/
+└─ calc/
+├─ Main.java
+├─ modelo/
+├─ visao/
+└─ ...
 
-> Todo o código-fonte está em Java (100%). ([GitHub][1])
+````
+
+A divisão em pacotes facilita manutenção, legibilidade e futuras expansões do sistema.
 
 ---
 
-## 💻 Como Executar
+## 🛠️ Tecnologias Utilizadas
 
-Siga estes passos para **compilar e rodar** o programa:
+- **Java**
+- **Java Swing**
+- Paradigma Orientado a Objetos
 
-### 1. Clone este repositório
+---
+
+## ▶️ Como Executar
+
+### 📋 Pré-requisitos
+
+- JDK 8 ou superior instalado
+
+### 📥 Passos
+
+1. Clone o repositório:
 
 ```bash
 git clone https://github.com/Caua-Andrade/Calculadora.git
-```
+````
 
-### 2. Navegue até o diretório
+2. Acesse a pasta do projeto:
 
 ```bash
 cd Calculadora
 ```
 
-### 3. Compile os arquivos Java
+3. Compile os arquivos:
 
 ```bash
-javac -d bin src/br/com/cod3r/calc/*.java
+javac -d bin src/br/com/cod3r/calc/**/*.java
 ```
 
-> O comando acima compila o código e coloca os arquivos `.class` na pasta `bin`. Se preferir, use sua IDE favorita (IntelliJ, Eclipse, VS Code, etc.) e simplesmente execute o projeto. ([GitHub][1])
-
-### 4. Rode o programa
+4. Execute a aplicação:
 
 ```bash
 java -cp bin br.com.cod3r.calc.Main
 ```
 
-📌 **Dica:** dependendo da sua classe principal (ex.: `Main.java` ou `App.java`), ajuste o nome no comando acima.
+> Também é possível importar o projeto diretamente em uma IDE como IntelliJ IDEA ou Eclipse e executar a classe principal.
 
 ---
 
-## 🧪 Exemplos de Uso
+## 🎯 Objetivo Profissional
 
-Depois de executar o programa, você verá algo como:
+Este projeto faz parte da minha evolução prática em Java, consolidando fundamentos essenciais para desenvolvimento de aplicações desktop e preparando base sólida para tecnologias mais avançadas como JavaFX e Spring Boot.
 
-```
-Informe o primeiro número:
-> 10
-Escolha a operação (+ - * /):
-> *
-Informe o segundo número:
-> 5
-Resultado: 50
-```
+Ele demonstra capacidade de:
 
-Você pode repetir o processo várias vezes até decidir encerrar.
-
----
-
-## 🛠 Tecnologias Usadas
-
-| Tecnologia           | Finalidade                           |
-| -------------------- | ------------------------------------ |
-| 🟨 Java              | Linguagem principal da aplicação     |
-| 📦 Pacotes Java      | Organização modular de código        |
-| 🖥️ Linha de comando | Interface simples para entrada/saída |
-
----
-
-## 💡 Próximas Melhorias
-
-Se desejar evoluir o projeto, algumas ideias incluem:
-
-* 🧮 Adicionar suporte a operações avançadas (potência, porcentagem, raiz)
-* 📊 Histórico de cálculos
-* 🧠 Validação de entrada mais robusta
-* 🪟 Interface gráfica (JavaFX ou Swing)
+* Estruturar projetos reais
+* Trabalhar com interfaces gráficas
+* Aplicar princípios de design limpo
+* Desenvolver soluções organizadas e escaláveis
