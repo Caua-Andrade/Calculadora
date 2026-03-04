@@ -61,6 +61,15 @@ public class Memoria {
 
     private String obterResultadoOperacao() {
 
+        if (ultimaOperacao == null) {
+            return textoAtual;
+        }
+
+        double numeroBuffer = Double.parseDouble(textoBuffer.replace(",", "."));
+        double numeroAtual = Double.parseDouble(textoAtual.replace(",", "."));
+
+        double resultado = 0;
+
         return textoAtual;
     }
 
