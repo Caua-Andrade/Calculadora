@@ -51,9 +51,15 @@ public class Memoria {
         } else {
             // ao clicar em alguma operação, o valor seguinte vai ser substituido
             substituir = true;
+            textoAtual = obterResultadoOperacao();
         }
 
         observadores.forEach(o -> o.valorAlterado(getTextoAtual()));
+    }
+
+    private String obterResultadoOperacao() {
+
+        return textoAtual;
     }
 
     private TipoComando detectarTipoComando(String texto) {
