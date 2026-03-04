@@ -95,7 +95,6 @@ public class Memoria {
             return null;
         }
 
-
         try {
             Integer.parseInt(texto);
             return TipoComando.NUMERO;
