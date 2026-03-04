@@ -49,7 +49,8 @@ public class Memoria {
             textoAtual = substituir ? texto : textoAtual + texto;
             substituir = false;
         } else {
-            // proxima
+            // ao clicar em alguma operação, o valor seguinte vai ser substituido
+            substituir = true;
         }
 
         observadores.forEach(o -> o.valorAlterado(getTextoAtual()));
