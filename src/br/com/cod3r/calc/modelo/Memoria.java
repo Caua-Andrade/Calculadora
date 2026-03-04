@@ -70,6 +70,10 @@ public class Memoria {
 
         double resultado = 0;
 
+        if (ultimaOperacao == TipoComando.SOMA) {
+            resultado = numeroBuffer + numeroAtual;
+        }
+
         return textoAtual;
     }
 
