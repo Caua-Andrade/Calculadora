@@ -1,116 +1,128 @@
-```markdown
-# 📟 Calculadora em Java
+# 📟 Calculadora — Projeto em Java
 
-Projeto de uma **calculadora simples desenvolvida em Java**, criada com o objetivo de praticar lógica de programação, entrada e saída de dados pelo terminal e conceitos básicos de Programação Orientada a Objetos (POO).
+Este repositório contém uma **calculadora simples desenvolvida em Java**, criada com o objetivo de praticar lógica de programação, manipulação de entrada/saída via terminal e conceitos de programação orientada a objetos (POO). ([GitHub][1])
 
 ---
 
 ## 🧠 Sobre o Projeto
 
-Esta aplicação funciona via **linha de comando**, permitindo que o usuário realize operações matemáticas básicas entre dois números.
-
-O projeto foi desenvolvido como prática de aprendizado em Java, focando em:
-
-- Estrutura de pacotes
-- Organização de classes
-- Lógica condicional
-- Tratamento de erros
-- Interação com o usuário via terminal
+A Calculadora é um programa de linha de comando que permite ao usuário realizar operações matemáticas básicas entre números. O foco principal é fornecer uma ferramenta de estudo para quem está aprendendo Java e lógica de programação. ([GitHub][1])
 
 ---
 
 ## 🚀 Funcionalidades
 
-- ✅ Soma
-- ✅ Subtração
-- ✅ Multiplicação
-- ✅ Divisão
-- ✅ Tratamento de divisão por zero
-- 🔁 Execução contínua até o usuário decidir encerrar
+* ✅ Soma de dois números
+* ✅ Subtração
+* ✅ Multiplicação
+* ✅ Divisão (com tratamento de divisão por zero)
+* ⚙️ Interface simples no terminal
+* 🔁 Possibilidade de realizar múltiplos cálculos em sequência
+
+> ⚠️ **Nota:** O programa trabalha via linha de comando, recebendo inputs do usuário e exibindo o resultado no console. ([GitHub][1])
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+## 🧾 Pré-requisitos
 
-- **Java**
-- Estrutura de pacotes (`br.com.cod3r.calc`)
-- Execução via terminal
+Antes de executar este projeto, você precisa ter instalado em sua máquina:
+
+* 🟩 **Java Development Kit (JDK) 8 ou superior**
+* 📁 Um terminal/linha de comando
+* 🧑‍💻 Familiaridade básica com Java
 
 ---
 
 ## 📂 Estrutura do Projeto
 
+O projeto está organizado utilizando o padrão de pacotes Java:
+
+```
+src/
+└── br/
+    └── com/
+        └── cod3r/
+            └── calc/
+                ├── (arquivos .java da calculadora)
+                └── …
+.idea/                   # Configurações da IDE
+.gitignore               # Arquivos ignorados pelo Git
+calculadora.iml          # Configuração de projeto da IDE
 ```
 
-Calculadora/
-│
-├── src/
-│   └── br/
-│       └── com/
-│           └── cod3r/
-│               └── calc/
-│                   ├── (arquivos .java)
-│
-├── .idea/
-├── .gitignore
-└── calculadora.iml
-
-````
+> Todo o código-fonte está em Java (100%). ([GitHub][1])
 
 ---
 
-## 💻 Como Executar o Projeto
+## 💻 Como Executar
 
-### 1️⃣ Clonar o repositório
+Siga estes passos para **compilar e rodar** o programa:
+
+### 1. Clone este repositório
 
 ```bash
 git clone https://github.com/Caua-Andrade/Calculadora.git
-````
+```
 
-### 2️⃣ Entrar na pasta do projeto
+### 2. Navegue até o diretório
 
 ```bash
 cd Calculadora
 ```
 
-### 3️⃣ Compilar o projeto
+### 3. Compile os arquivos Java
 
 ```bash
 javac -d bin src/br/com/cod3r/calc/*.java
 ```
 
-### 4️⃣ Executar o programa
+> O comando acima compila o código e coloca os arquivos `.class` na pasta `bin`. Se preferir, use sua IDE favorita (IntelliJ, Eclipse, VS Code, etc.) e simplesmente execute o projeto. ([GitHub][1])
+
+### 4. Rode o programa
 
 ```bash
 java -cp bin br.com.cod3r.calc.Main
 ```
 
-> ⚠️ Caso a classe principal tenha outro nome, substitua `Main` pelo nome correto.
+📌 **Dica:** dependendo da sua classe principal (ex.: `Main.java` ou `App.java`), ajuste o nome no comando acima.
 
 ---
 
-## 🧪 Exemplo de Uso
+## 🧪 Exemplos de Uso
+
+Depois de executar o programa, você verá algo como:
 
 ```
 Informe o primeiro número:
 > 10
-
 Escolha a operação (+ - * /):
 > *
-
 Informe o segundo número:
 > 5
-
 Resultado: 50
 ```
 
+Você pode repetir o processo várias vezes até decidir encerrar.
+
 ---
 
-## 💡 Possíveis Melhorias Futuras
+## 🛠 Tecnologias Usadas
 
-* ➕ Adicionar potência e raiz quadrada
-* 📜 Implementar histórico de operações
-* 🖥 Criar versão com interface gráfica (JavaFX ou Swing)
-* 🧪 Adicionar testes automatizados
+| Tecnologia           | Finalidade                           |
+| -------------------- | ------------------------------------ |
+| 🟨 Java              | Linguagem principal da aplicação     |
+| 📦 Pacotes Java      | Organização modular de código        |
+| 🖥️ Linha de comando | Interface simples para entrada/saída |
+
+---
+
+## 💡 Próximas Melhorias
+
+Se desejar evoluir o projeto, algumas ideias incluem:
+
+* 🧮 Adicionar suporte a operações avançadas (potência, porcentagem, raiz)
+* 📊 Histórico de cálculos
+* 🧠 Validação de entrada mais robusta
+* 🪟 Interface gráfica (JavaFX ou Swing)
 
 ---
