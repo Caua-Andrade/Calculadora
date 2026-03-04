@@ -124,5 +124,3 @@ Se desejar evoluir o projeto, algumas ideias incluem:
 * 📊 Histórico de cálculos
 * 🧠 Validação de entrada mais robusta
 * 🪟 Interface gráfica (JavaFX ou Swing)
-
----
